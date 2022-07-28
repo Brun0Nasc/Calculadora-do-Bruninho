@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Normal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="principal">
+        <div id="resultado">
+            <p id="resposta"></p>
+            <p id="operando">0</p>
+        </div>
+        <div id="teclado">
+            <table>
+                <tr>
+                    <td><button value="7" class="num" onclick="addNum('7')">7</button></td>
+                    <td><button value="8" class="num" onclick="addNum('8')">8</button></td>
+                    <td><button value="9" class="num" onclick="addNum('9')">9</button></td>
+                    <td><button value="mult" class="op" onclick="operar('x')">X</button></td>
+                </tr>
+                <tr>
+                    <td><button value="4" class="num" onclick="addNum('4')">4</button></td>
+                    <td><button value="5" class="num" onclick="addNum('5')">5</button></td>
+                    <td><button value="6" class="num" onclick="addNum('6')">6</button></td>
+                    <td><button value="sub" class="op" onclick="operar('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button value="1" class="num" onclick="addNum('1')">1</button></td>
+                    <td><button value="2" class="num" onclick="addNum('2')">2</button></td>
+                    <td><button value="3" class="num" onclick="addNum('3')">3</button></td>
+                    <td><button value="som" class="op" onclick="operar('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button value="0" class="num" onclick="addNum('0')">0</button></td>
+                    <td><button value="." class="op" onclick="addNum('.')">.</button></td>
+                    <td><button value="igual" class="igual" onclick="operar('=')">=</button></td>
+                    <td><button value="div"class="op" onclick="operar('÷')">÷</button></td>
+                </tr>
+            </table>
+
+            <script src="calculadora.js"></script>
+        </div>
+    </div>
+</body>
+</html>
